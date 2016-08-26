@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace BitTask.Models
 {
-    internal class Project
+    public class Project
     {
-        internal Guid ID { get; set; } = Guid.NewGuid();
-        internal List<Category> Categories { get; set; } = new List<Category>();
-        internal bool ApprovalRequired { get; set; } = true;
+        public Guid ID { get; set; } = Guid.NewGuid();
+        public List<Category> Categories { get; set; } = new List<Category>();
+        public bool ApprovalRequired { get; set; } = true;
 
     }
 }

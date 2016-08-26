@@ -2,7 +2,7 @@
 
 namespace BitTask.Models
 {
-    internal enum DayOfTheWeek
+    public enum DayOfTheWeek
     {
         Monday,
         Tuesday,
@@ -12,10 +12,10 @@ namespace BitTask.Models
         Saturday,
         Sunday
     }
-    internal class TemporalPoint
+    public class TemporalPoint
     {
-        internal Guid ID { get; set; } = Guid.NewGuid();
-        internal DayOfTheWeek Day { get; set; }
-        internal int MinutesPastMidnight { get; set; }
+        public Guid ID { get; set; } = Guid.NewGuid();
+        public DayOfTheWeek Day { get; set; }
+        public int MinutesPastMidnight { get; set; }
     }
 }

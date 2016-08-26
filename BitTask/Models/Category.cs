@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BitTask.Models
 {
-    internal class Category
+    public class Category
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        internal string CategoryName { get; set; }
+        public string CategoryName { get; set; }
     }
 }

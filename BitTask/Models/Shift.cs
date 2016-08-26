@@ -2,10 +2,10 @@
 
 namespace BitTask.Models
 {
-    internal class Shift
+    public class Shift
     {
-        internal Guid ID { get; set; } = Guid.NewGuid();
-        internal TemporalPoint Start { get; set; }
-        internal TemporalPoint End { get; set; }
+        public Guid ID { get; set; } = Guid.NewGuid();
+        public TemporalPoint Start { get; set; }
+        public TemporalPoint End { get; set; }
     }
 }

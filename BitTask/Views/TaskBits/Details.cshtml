@@ -1,0 +1,58 @@
+﻿@model BitTask.Models.TaskBit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TaskBit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EstimatedTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstimatedTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortTaskDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortTaskDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LongTaskDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LongTaskDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
