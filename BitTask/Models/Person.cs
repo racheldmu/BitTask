@@ -36,7 +36,8 @@ namespace BitTask.Models
             int saltSize = 16;
             int bytesRequired = 32;
             byte[] array = new byte[1 + saltSize + bytesRequired];
-            int iterations = 1000; // 1000, afaik, which is the min recommended for Rfc2898DeriveBytes
+            // 1000, afaik, which is the min recommended for Rfc2898DeriveBytes
+            int iterations = 1000;
             using (var pbkdf2 = new Rfc2898DeriveBytes(_password, saltSize, iterations))
             {
                 byte[] salt = pbkdf2.Salt;
